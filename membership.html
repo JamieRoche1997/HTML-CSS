@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Memberships</title>
+    <link rel="stylesheet" href="balloon.css">
+    <link rel="icon" type="image/png" href="Images/balloon-icon.png">
+  </head>
+  <body>
+    <h1>Memberships</h1>
+      <nav class="topnav">
+       <a href="index.html" class="navi">Home</a> <a href="events.html" class="navi">Events</a> <a href="membership.html" class="active">Memberships</a> <a href="contact.html" class="navi">Contact</a>
+      </nav>
+
+    <br>
+
+    <h2>Personal Information</h2>
+
+    <form method="post" action="https://webdevcit.com/displayvalues.php" target="_blank">
+
+		<input type="hidden" name="subject" value="Contest Entry Form">
+		<input type="hidden" name="redirect" value="forms.html">
+
+    <fieldset>
+      <legend>Contact Details</legend>
+        <label>Name:</label>
+          <input type="text" name="Name" autocomplete="on" required><br><br>
+        <label>Email Address:</label>
+          <input type="email" name="emailaddress" autocomplete="on" required><br><br>
+        <label>Telephone Number:</label>
+          <input type="tel" name="phonenumber" autocomplete="on" required><br><br>
+        <label>Date of birth:</label>
+          <input type="date" name="dob" value="2021-11-15" max="2005-11-15"><br><br>
+        <label>Preferred contact method:</label>
+          <select class="contact" name="contact">
+            <option value="email">Email</option>
+            <option value="zoom">Zoom</option>
+            <option value="whatsapp">WhatsApp</option>
+            <option value="canvas">Canvas</option>
+          </select>
+    </fieldset>
+
+    <h2>College Information & Experience</h2>
+
+    <fieldset>
+      <label>Department of study:</label>
+        <input type="text" name="department" required><br><br>
+      <label>Level of experience:</label>
+        <label><input type="radio" name="experience" value="novice">Novice</label>
+        <label><input type="radio" name="experience" value="competent">Competent</label>
+        <label><input type="radio" name="experience" value="expert">Expert</label><br><br>
+      <label>Interest in competitions:</label>
+        <label><input type="radio" name="competition" value="yes">Yes</label>
+        <label><input type="radio" name="competition" value="no">No</label><br><br>
+      <label>Reasons for joining:</label><br><br>
+        <textarea name="reasons" rows="5" cols="50" placeholder="No more than 300 characters long"></textarea>
+    </fieldset>
+
+    <p>
+      <button type="submit"><img src="Images/submit.png" alt="Submit" width="48" height="48"><br>Submit</button>
+      <!-- Icon source: https://www.iconspedia.com/icon/tick-icon-27979.html -->
+      <button type="reset" name="cancel" class="cancel"><img src="Images/cancel.png" alt="Cancel" width="48" height="48"><br>Cancel</button>
+      <!-- Icon source: https://www.iconspedia.com/icon/cancel---0.html -->
+    </p>
+    </form>
+
+    <footer>
+      <p>&copy; 2021 Jamie Roche | <a href="mailto:jamie.roche1@mycit.ie" class="footer">jamie.roche1@mycit.ie | </a> <a href="tel:0862208215" class="footer">086 220 8215</a></p>
+      <p><a href="#top">Back to top</a>
+      </p>
+    </footer>
+
+  </body>
+</html>
